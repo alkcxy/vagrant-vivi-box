@@ -23,11 +23,11 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.define :td do |td|
+  config.vm.define :vivi32 do |td|
     td.vm.box = "ubuntu/trusty32"
   end
 
-  config.vm.define :sq do |sq|
+  config.vm.define :vivi64 do |sq|
     sq.vm.box = "ubuntu/trusty64"
   end
 
