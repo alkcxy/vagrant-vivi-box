@@ -11,8 +11,7 @@ mysql_install_db --defaults-file=$HOME/.my.cnf
 sudo rm /var/run/mysqld -rf
 sudo ln -s $HOME/db.mysql /var/run/mysqld
 
-ln -s /vagrant/vassals/mysql.ini $HOME/vassals/
-#cp /vagrant/vassals/mysql.ini $HOME/vassals/
+cp /vagrant/vassals/mysql.ini $HOME/vassals/
 tail -f $HOME/emperor.log | while read LOGLINE
 do
    if [[ "${LOGLINE}" == *"mysqld: ready for connections"* ]]; then

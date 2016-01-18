@@ -7,4 +7,4 @@ rvm use 2.2@vagrant
 source $HOME/.bash_profile
 nvm use v4.2.4
 cd
-uwsgi --emperor $HOME/vassals  --daemonize $HOME/emperor.log
+uwsgi --ini bin/emperor.ini
